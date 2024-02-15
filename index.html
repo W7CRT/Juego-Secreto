@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <! h1 es el titulo del archivo o del juego>
+                        <p class="texto__parrafo"></p>
+                        <! p es uan etiqueta que permite tener un parrafo de texto>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                <! input es una etiqueta de entrada, e este caso el cuadro blanco y representa el numero que va ingresar
+                    el usuario para validar si acerto en el numero secreto.... y se declara otro atributo que es el id
+                    que se guarda en valorUsuario esto diferencia varios input>
+                    <div class="chute container__botones">
+                        <button onclick="verificarIntento();" class="container__boton">Intentar</button>
+                        <! verificarIntento es una función que se llama de js y aqui se ejecuta... el ; es recomendado>
+                            <!button es la etiqueta que crea un boton>
+                                <! en HTML existe on que escuando, en este caso onclick es cuando haga click que pase
+                                    algo>
+                                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar"
+                                        disabled>Nuevo
+                                        juego</button>
+                                    <! aquí estamos haciendo que cuando se haga click en el boton se va llamar la
+                                        función reiniciarJuego>
+                    </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+
+
+    <! a estos elementos se le conocen como etiquetas o tag>
+
+
+
+
+        <script src="app.js"></script>
+        <!es llamar el archivo js para ejecutarse>
+</body>
+
+</html>
